@@ -35,7 +35,7 @@ RUN set -xe; \
 
 COPY ./entrypoint.sh /usr/local/bin/entrypoint.sh
 
-ENV XVFB_WHD="${XVFB_WHD:-1280x720x16}"
-ENV DISPLAY=":99"
+ENV XVFB_WHD="3840x2160x24"\
+    DISPLAY=":99"
 
 CMD ["/usr/local/bin/entrypoint.sh"]
